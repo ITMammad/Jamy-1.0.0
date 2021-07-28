@@ -1,3 +1,4 @@
+/**********   Jamy.JS   **********/
 function jstac(element , ac) {
   document.querySelector(element).style.alignContent = ac;
 }
