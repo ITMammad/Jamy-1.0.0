@@ -740,9 +740,3 @@ function jstor(key , val) {
     return "Error in jstor parametrs";
   }
 }
-class Jamy extends HTMLScriptElement {
-    constructor() {
-        return "Jamy.JS Librarary";
-    }
-}
-customElements.define("jamy-js", Jamy, {extends: "script"});
