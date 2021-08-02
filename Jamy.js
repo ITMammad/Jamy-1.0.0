@@ -740,3 +740,8 @@ function jstor(key , val) {
     return "Error in jstor parametrs";
   }
 }
+function jscrtb(element){
+  let ele = document.querySlector(element);
+  let scr = ele.scrollHeight;
+  ele.scrollTo(0,scr);
+}
