@@ -745,3 +745,37 @@ function jscrtb(element){
   let scr = ele.scrollHeight;
   ele.scrollTo(0,scr);
 }
+function jxhr(method , url , onload , onerror , asynchronous) {
+  let xhr = new XMLHttpRequest();
+  this.that = xhr;
+  if (asynchronous === undefined) {
+    xhr.open(method , url);
+  }else{
+    xhr.open(method , url , asynchronous);
+  }
+  xhr.onload = onload;
+  xhr.onerror = onerror;
+  xhr.send();
+}
+function jjsond(json) {
+  let j = json;
+  return JSON.parse(j);
+}
+function jjsone(array) {
+  return JSON.stringify(array);
+}
+function jgeted(geted) {
+  let s = joloc("search");
+  let ss = s.split("&");
+  let ssl = ss.length;
+  let sss = [];
+  let ssssss = ss[0].replace("?" , "");
+  let sssssss = ssssss.split("=");
+  sss[sssssss[0]] = sssssss[1];
+  for (let i = 1;i < ssl;i++) {
+    let ssss = ss[i];
+    let sssss = ssss.split("=");
+    sss[sssss[0]] = sssss[1];
+  }
+  return sss[geted];
+}
