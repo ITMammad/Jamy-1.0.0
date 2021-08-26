@@ -779,3 +779,9 @@ function jgeted(geted) {
   }
   return sss[geted];
 }
+function reverse(str) {
+let arr = str.split("");
+arr.reverse();
+let ret = arr.join("");
+return ret;
+}
