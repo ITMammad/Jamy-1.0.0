@@ -780,8 +780,13 @@ function jgeted(geted) {
   return sss[geted];
 }
 function reverse(str) {
-let arr = str.split("");
-arr.reverse();
-let ret = arr.join("");
-return ret;
+  let arr = str.split("");
+  arr.reverse();
+  let ret = arr.join("");
+  return ret;
+}
+function jimport(src){
+  let script = document.createElement("script");
+  script.src = src;
+  document.head.appendChild(script);
 }
