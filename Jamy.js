@@ -790,3 +790,14 @@ function jimport(src){
   script.src = src;
   document.head.appendChild(script);
 }
+function jscrn(element){
+  if (element === window) {
+      let Y = window.scrollY;
+      let X = window.scrollX;
+      window.scrollTo(X , Y);
+  }else {
+      let Y = document.querySelector(element).scrollY;
+      let X = document.querySelector(element).scrollX;
+      document.querySelector(element).scrollTo(X , Y);
+  }
+}
