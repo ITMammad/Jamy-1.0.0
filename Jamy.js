@@ -745,17 +745,22 @@ function jscrtb(element){
   let scr = ele.scrollHeight;
   ele.scrollTo(0,scr);
 }
-function jxhr(method , url , onload , onerror , asynchronous) {
+function jajax(obj) {
   let xhr = new XMLHttpRequest();
   this.that = xhr;
-  if (asynchronous === undefined) {
-    xhr.open(method , url);
+  if (obj.asynchronous === undefined) {
+    xhr.open(obj.method , obj.url);
   }else{
-    xhr.open(method , url , asynchronous);
+    xhr.open(obj.method , obj.url , obj.asynchronous);
   }
-  xhr.onload = onload;
-  xhr.onerror = onerror;
-  xhr.send();
+  xhr.onload = obj.onload;
+  xhr.onerror = obj.onerror;
+	if (obj.method === "GET") {
+		xhr.send();
+	}else{
+		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+		xhr.send(obj.data);
+	}
 }
 function jjsond(json) {
   let j = json;
