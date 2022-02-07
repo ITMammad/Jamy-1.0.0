@@ -1,3 +1,5 @@
 # Jamy
 Jamy.JS JavaScrpt library.
-The Jamy.JS library is an open source javascript library for developers want a tools for write better applications in javascript.
+Jamy.JS library is a new syntax for javascript and it uses for writing Desktop.JS windows UI and UX... 
+You can use it with Vanilla javascript or with any libraries...
+It's good! No? 
