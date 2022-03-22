@@ -805,3 +805,15 @@ function jstac(element , ac) {
         document.querySelector(element).scrollTo(X , Y);
     }
   }
+var jexponent = (base , exponent) => {
+    let rt = 0;
+    var i = 0;
+    for (var i = 0; i < tawan - 1; i++) {
+        if (rt === 0) {
+            rt = payeh * payeh;
+        } else {
+            rt = payeh * rt;
+        }
+    }
+    return rt;
+}
